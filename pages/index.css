@@ -78,16 +78,25 @@
 
 /*Etiqueta especial de estilo*/
 .header__title {
-  max-width: 709px;
+  height: auto;
   margin: 183px 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Inter", Arial, Sans-serif;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+  max-width: 709px;
 }
 
-.title-content__line {
+/*.title-content__line {
   display: block;
-}
+}*/
 
 /*Titulo Superior*/
-.title-content__line--top {
+.header__title_span-accent {
   font-family: "Noto Serif";
   font-style: italic;
   font-size: 58px;
