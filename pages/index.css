@@ -77,17 +77,17 @@
 }
 
 /*Etiqueta especial de estilo*/
-.title__content {
+.title-content {
   max-width: 709px;
   margin: 183px 0 0 80px;
 }
 
-.linea {
+.title-content__line {
   display: block;
 }
 
 /*Titulo Superior*/
-.title__content_top {
+.title-content__line--top {
   font-family: "Noto Serif";
   font-style: italic;
   font-size: 58px;
@@ -96,12 +96,16 @@
 }
 
 /*Titulo Inferior*/
-.title__content_bottom {
+.title-content__line--bottom {
   font-family: "Inter";
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   letter-spacing: 1px;
+}
+
+.header-footer__line {
+  display: block;
 }
 
 /*Titulo: Descripcion*/
@@ -136,7 +140,7 @@
   box-sizing: border-box;
 }
 
-.header_footer__column_content_hours {
+.header-footer__column-content-hours {
   margin: 0 0 40px 80px;
   display: block;
   font-family: "Inter";
@@ -205,7 +209,7 @@
   flex-direction: column;
 }
 
-.recipes__video_iframe {
+.recipes__video-iframe {
   width: 480px;
   height: 273px;
 }
