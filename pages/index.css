@@ -84,12 +84,12 @@ p {
 /*Header: Title + Imagen*/
 /*---------------------------*/
 .header__content {
-  display: flex;
-  justify-content: space-between;
 }
 
 /*Etiqueta especial de estilo*/
 .header__title {
+  display: flex;
+  justify-content: space-between;
   height: auto;
   margin: 183px 0 0 80px;
   display: flex;
