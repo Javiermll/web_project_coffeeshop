@@ -89,45 +89,24 @@ p {
 /*Etiqueta especial de estilo*/
 .header__title {
   display: flex;
-  justify-content: space-between;
-  height: auto;
-  margin: 183px 0 0 80px;
-  display: flex;
   flex-direction: column;
-  position: relative;
-  font-family: "Inter", Arial, Sans-serif;
-  font-weight: 500;
-  font-size: 58px;
-  line-height: 72px;
-  letter-spacing: -1px;
+  margin: 183px 0 0 80px;
   max-width: 709px;
-}
 
-/*.title-content__line {
-  display: block;
-}*/
-
-/*Titulo Superior*/
-.header__title_span-accent {
-  font-family: "Noto Serif";
-  font-style: italic;
-  font-size: 58px;
-  line-height: 72px;
-  color: #2f80ed;
-}
-
-/*Titulo Inferior*/
-.title-content__line--bottom {
-  font-family: "Inter";
+  font-family: "Inter", Arial, Sans-serif;
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   letter-spacing: 1px;
 }
 
-.header-footer__line {
-  display: block;
-  margin: 0;
+/*Titulo Superior*/
+.header__title-span {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
 }
 
 /*Titulo: Descripcion*/
