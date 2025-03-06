@@ -3,20 +3,225 @@
   min-width: 1100px;
   max-width: 1600px;
   font-family: "Inter", Arial, sans-serif;
-  /*font-family: "Noto Serif", "Times New Roman", serif serif;*/
+  font-family: "Noto Serif", "Times New Roman", serif serif;
   font-size: 16px;
   line-height: 20px;
+
+  /*Valores predeterminados que sirven a varios estilos
+    font-weight: normal (Equivale a 400)*/
+  font-style: normal;
+  font-weight: normal;
 }
 
 .header {
+  /*Ajustes de imagen de fondo*/
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /**/
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  /*padding: 30px 80px 40px;*/
+  position: relative;
+  box-sizing: border-box;
 }
 
-.content {
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
+
+.nav__logo {
+  margin: 30px 0 0 30px;
+  width: 105px;
+  height: 39px;
+}
+
+/*-----------------------*/
+/*Nav: Links*/
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 80px 0 0;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav__link {
+  /*Estilo grafico de los enlaces*/
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}
+
+/*Header: Title + Imagen*/
+/*---------------------------*/
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Etiqueta especial de estilo*/
+.title__content {
+  max-width: 709px;
+  margin: 183px 0 0 80px;
+}
+
+.linea {
+  display: block;
+}
+
+/*Titulo Superior*/
+.title__content_top {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+/*Titulo Inferior*/
+.title__content_bottom {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
+}
+
+/*Titulo: Descripcion*/
+.header__description {
+  max-width: 683px;
+  margin: 20px 0 0 80px;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+/*Titulo: Imagen*/
+.header__image {
+  /*Imagen es hijo directo de Clase Header con position: absolute*/
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+/*-------------------------------*/
+
+/*Header: Footer*/
+/*---------------------------*/
+.paragraph {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header_footer__column_content_hours {
+  margin: 0 0 40px 80px;
+  display: block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.header__address {
+  margin: 0 80px 40px 0;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+/**/
+
+/*----------------------------------------------------------*/
+/*.content {
+}*/
 
 .recipes {
+  background-color: #0a2750;
+  background-image: url("../images/background_recipes.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
 }
 
+.recipes__title {
+  justify-items: flex-start;
+  max-width: 580px;
+  margin: 100px 0 0 80px;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.recipes__subtitle {
+  justify-items: flex-start;
+  max-width: 438px;
+  margin: 24px 0 0 80px;
+
+  font-family: "Noto Serif";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.recipes__videos {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 80px 0 215px 0;
+  gap: 40px;
+}
+
+.recipes__video-item {
+  flex-direction: column;
+}
+
+.recipes__video_iframe {
+  width: 480px;
+  height: 273px;
+}
+
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 0;
+
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/*---------------------------------------------------------------*/
 .reservation {
 }
 
