@@ -242,7 +242,8 @@ p {
 .reservation__title {
   display: flex;
   justify-content: center;
-  margin: 100px 0 80px 0;
+  margin-top: 100px;
+  margin-bottom: 80px;
 
   font-family: "inter";
   font-weight: 500;
@@ -250,7 +251,7 @@ p {
   line-height: 52px;
 }
 
-.form__main-container {
+.reservation__form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,7 +263,7 @@ p {
   margin: 0 0 120px;
 }
 
-.form__fieldset {
+.reservation__fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,7 +271,7 @@ p {
 }
 
 /*Display:block para que los nombres esten en linea*/
-.form__label {
+.reservation__label {
   margin: 0 0 8px;
   display: block;
 
@@ -285,7 +286,7 @@ p {
 
 /*Ajuste de casilla de verificacion por flexbox*/
 
-.form__item {
+.reservation__item {
   border-radius: 4px;
   height: 60px;
   margin: 0 0 32px;
@@ -297,30 +298,30 @@ p {
   line-height: 20px;
 }
 
-.form__item[type="datetime-local"] {
+.reservation__item[type="datetime-local"] {
   padding: 0 0 0 20px;
   margin: 0 0 32px 0;
 }
 
 /*Padding para mover los textos de placeholder*/
-.form__item::placeholder {
+.reservation__item::placeholder {
   padding-top: 15px;
   padding-left: 20px;
 }
 
 /*PREFIJO DE PROVEEDOR DE SAFARI*/
-.form__item::-webkit-input-placeholder {
+.reservation__item::-webkit-input-placeholder {
   padding-top: 15px;
   padding-left: 20px;
 }
 /*MOZILLA*/
-.form__item::-moz-placeholder {
+.reservation__item::-moz-placeholder {
   padding-top: 15px;
   padding-left: 20px;
 }
 
 /*MICROSOFT*/
-.form__item::-ms-input-placeholder {
+.reservation__item::-ms-input-placeholder {
   padding-top: 15px;
   padding-left: 20px;
 }
@@ -328,7 +329,7 @@ p {
 /*Campos de entrada*/
 
 /*Campo de botones*/
-.form__button {
+.reservation__button {
   border-radius: 4px;
 
   font-family: "Inter";
@@ -343,62 +344,12 @@ p {
   margin: 0 0 32px;
 }
 
-.form__button:hover {
+.reservation__button:hover {
   opacity: 0.7;
 }
 
-/*Casilla Checkbox*/
-/*.form__fieldset_checkbox {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.form__label_checkbox {
-  margin: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.form__item_el_checkbox {
-  border-radius: 2px;
-  width: 20px;
-  height: 20px;
-
-  margin: 0;
-  background-color: #2f80ed;
-  background-image: url(../images/check.svg);
-}
-
-.form__pseudo-item {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.form__label_checkbox:checked + .form__pseudo-item_type_checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  background-image: url(../images/check.svg);
-}
-
-.form__label_checkbox:disabled + .form__pseudo-item_type_checkbox {
-  border: 1px solid gray;
-}
-
-.form__label_checkbox:disabled:checked + .form__pseudo-item_type_checkbox {
-  background-image: url(../images/check.svg);
-}
-
-.form__label_checkbox:focus + .form__pseudo-item_type_checkbox {
-  box-shadow: 0 0 5px #fff6c5;
-}
-
 /* Casilla Checkbox */
-.form__fieldset_checkbox {
+.reservation__fieldset_checkbox {
   border: none;
   margin: 0;
   padding: 0;
@@ -407,7 +358,7 @@ p {
   justify-content: space-between;
 }
 
-.form__label_checkbox {
+.reservation__label_checkbox {
   margin: 0;
   flex-direction: row-reverse;
   align-items: center;
@@ -416,11 +367,11 @@ p {
 }
 
 /* Aplicar margen derecho al texto */
-.form__label_checkbox::before {
+.reservation__label_checkbox::before {
   margin-right: 12px; /* Separación de 12px */
 }
 
-.form__item_el_checkbox {
+.reservation__item_el_checkbox {
   border-radius: 2px;
   width: 20px;
   height: 20px;
@@ -431,13 +382,13 @@ p {
   background-size: cover; /* Ajusta la imagen al tamaño del checkbox */
 }
 
-.form__pseudo-item {
+.reservation__pseudo-item {
   display: inline-block; /* Permite especificar el ancho y la altura del elemento span */
   vertical-align: middle;
 }
 
 /* Cuando el checkbox está marcado */
-.form__label_checkbox:checked + .form__pseudo-item_type_checkbox {
+.reservation__label_checkbox:checked + .reservation__pseudo-item_type_checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -449,19 +400,21 @@ p {
 }
 
 /* Cuando el checkbox está deshabilitado */
-.form__label_checkbox:disabled + .form__pseudo-item_type_checkbox {
+.reservation__label_checkbox:disabled
+  + .reservation__pseudo-item_type_checkbox {
   border: 1px solid gray;
 }
 
 /* Cuando el checkbox está deshabilitado y marcado */
-.form__label_checkbox:disabled:checked + .form__pseudo-item_type_checkbox {
+.reservation__label_checkbox:disabled:checked
+  + .reservation__pseudo-item_type_checkbox {
   /* Imagen aleatoria como fondo */
   background-image: url(../images/check.svg);
   background-size: cover; /* Ajusta la imagen al tamaño del checkbox */
 }
 
 /* Cuando el checkbox está enfocado */
-.form__label_checkbox:focus + .form__pseudo-item_type_checkbox {
+.reservation__label_checkbox:focus + .reservation__pseudo-item_type_checkbox {
   box-shadow: 0 0 5px #fff6c5;
 }
 

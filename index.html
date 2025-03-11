@@ -155,15 +155,15 @@
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
 
-          <div class="form__main-container">
+          <div class="form__form-container">
             <form class="reservation__form">
               <!--Nombre-->
-              <fieldset class="form__fieldset">
+              <fieldset class="reservation__fieldset">
                 <!--Text-->
-                <label for="Nombre" class="form__label">Nombre *</label>
+                <label for="Nombre" class="reservation__label">Nombre *</label>
                 <input
                   type="text"
-                  class="form__item form__item_el_name"
+                  class="reservation__item reservation__item_el_name"
                   id="Nombre"
                   name="Nombre"
                   placeholder="Nombre"
@@ -171,62 +171,66 @@
                 />
 
                 <!--Number-->
-                <label for="Numero de comensales" class="form__label"
+                <label for="Numero-de-comensales" class="reservation__label"
                   >Número de comensales *</label
                 >
                 <input
                   type="number"
-                  class="form__item form__item_el_date"
-                  id="Numero de comensales"
-                  name="Numero de comensales"
+                  class="reservation__item reservation__item_el_date"
+                  id="Numero-de-comensales"
+                  name="Numero-de-comensales"
                   min="1"
                   max="8"
                   placeholder="1-8"
                 />
 
                 <!--Datatime-local-->
-                <label for="datetime" class="form__label">Fecha y hora *</label>
+                <label for="datetime" class="reservation__label"
+                  >Fecha y hora *</label
+                >
                 <input
                   type="datetime-local"
-                  class="form__item form__item_el_date"
+                  class="reservation__item reservation__item_el_date"
                   id="datetime"
                   name="datetime"
                 />
 
                 <!--Email-->
-                <label for="email" class="form__label"
+                <label for="email" class="reservation__label"
                   >Tu correo electrónico *
                 </label>
                 <input
                   type="email"
-                  class="form__item form__item_el_email"
+                  class="reservation__item reservation__item_el_email"
                   id="email"
                   name="email"
                   placeholder="email@email.com"
                 />
 
-                <button type="submit" class="form__button">
+                <button type="submit" class="reservation__button">
                   Reservar una mesa
                 </button>
 
                 <!--Checkbox "Acepto los términos de uso"-->
 
-                <fieldset class="form__fieldset_checkbox">
+                <fieldset
+                  class="reservation__fieldset reservation__fieldset_checkbox"
+                >
                   <br />
                   <label
                     for="black-background"
-                    class="form__label form__label_checkbox"
+                    class="reservation__label reservation__label_checkbox"
                   >
                     Acepto los términos de uso
                     <input
                       type="checkbox"
-                      class="form__item form__item_el_checkbox"
-                      name="terminos de uso"
-                      id="terminos de uso"
+                      class="reservation__item reservation__item_el_checkbox"
+                      name="terminos-de-uso"
+                      id="terminos-de-uso"
                       value="Acepto los términos de uso"
                     />
                     <span
-                      class="form__pseudo-item form__pseudo-item_type_checkbox"
+                      class="reservation__pseudo-item reservation__pseudo-item_type_checkbox"
                     ></span>
                   </label>
                   <br />
