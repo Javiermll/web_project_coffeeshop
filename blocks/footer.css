@@ -44,7 +44,7 @@
   padding: 0;
 }
 
-.footer__content_social {
+.footer__social {
   flex-direction: column;
   margin-left: 80px;
 }

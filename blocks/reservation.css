@@ -24,3 +24,143 @@
   font-size: 44px;
   line-height: 52px;
 }
+
+.reservation__form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__form {
+  max-width: 385px;
+  width: 100%;
+  margin: 0 0 120px;
+}
+
+.reservation__fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+/*Display:block para que los nombres esten en linea*/
+.reservation__label {
+  margin: 0 0 8px;
+  display: block;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+}
+
+/*Ajuste de casilla de verificacion por flexbox*/
+
+.reservation__item {
+  border-radius: 4px;
+  height: 60px;
+  margin: 0 0 32px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.reservation__item[type="datetime-local"] {
+  padding: 0 0 0 20px;
+  margin: 0 0 32px 0;
+}
+
+/*Padding para mover los textos de placeholder*/
+.reservation__item::placeholder {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+/*PREFIJO DE PROVEEDOR DE SAFARI*/
+.reservation__item::-webkit-input-placeholder {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+/*MOZILLA*/
+.reservation__item::-moz-placeholder {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+/*MICROSOFT*/
+.reservation__item::-ms-input-placeholder {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+/*Campos de entrada*/
+
+/*Campo de botones*/
+.reservation__button {
+  border-radius: 4px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #2f80ed;
+  color: #ffffff;
+
+  height: 60px;
+  margin: 0 0 32px;
+}
+
+.reservation__button:hover {
+  opacity: 0.7;
+}
+
+/* Casilla Checkbox */
+.reservation__fieldset_checkbox {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reservation__label_checkbox {
+  margin: 0;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+/* Aplicar margen derecho al texto */
+.reservation__label_checkbox::before {
+  margin-right: 12px; /* Separación de 12px */
+}
+
+.reservation__item_el_checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background-color: #2f80ed;
+  /* Imagen aleatoria como fondo */
+  background-image: url(../images/check.svg);
+  background-size: cover; /* Ajusta la imagen al tamaño del checkbox */
+}
+
+.reservation__pseudo-item {
+  display: inline-block; /* Permite especificar el ancho y la altura del elemento span */
+  vertical-align: middle;
+}
