@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  margin: 30px 0 0 30px;
+  width: 105px;
+  height: 39px;
+}
+
+/*-----------------------*/
+/*Nav: Links*/
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 80px 0 0;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav__link {
+  /*Estilo grafico de los enlaces*/
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}

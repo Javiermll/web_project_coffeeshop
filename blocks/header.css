@@ -1,0 +1,95 @@
+.header {
+  /*Ajustes de imagen de fondo*/
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /**/
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  /*padding: 30px 80px 40px;*/
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*Header: Title + Imagen*/
+/*---------------------------*/
+/*Etiqueta especial de estilo*/
+.header__title {
+  display: flex;
+  flex-direction: column;
+  margin: 183px 0 0 80px;
+  max-width: 709px;
+
+  font-family: "Inter", Arial, Sans-serif;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
+}
+
+/*Titulo Superior*/
+.header__title-span {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+/*Titulo: Descripcion*/
+.header__description {
+  max-width: 683px;
+  margin: 20px 0 0 80px;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+/*Titulo: Imagen*/
+.header__image {
+  /*Imagen es hijo directo de Clase Header con position: absolute*/
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+/*-------------------------------*/
+
+/*Header: Footer*/
+/*---------------------------*/
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header__schedules {
+  margin: 0 0 40px 80px;
+  display: block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.header__address {
+  margin: 0 80px 40px 0;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+/**/

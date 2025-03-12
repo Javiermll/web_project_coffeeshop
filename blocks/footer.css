@@ -1,0 +1,88 @@
+.footer {
+  margin: auto;
+  padding: 60px 80px;
+  background-color: #0a2850;
+  color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__cover {
+  width: 100%;
+  z-index: 1;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 39px;
+  z-index: 3;
+}
+
+.footer__circle {
+  position: absolute;
+  z-index: 0;
+  top: -128px;
+  left: -44px;
+
+  width: 340px; /* Diámetro del círculo */
+  height: 340px; /* Debe ser igual al ancho */
+  border-radius: 50%; /* Hace que el elemento sea un círculo */
+  background-color: #3498db;
+  padding: 0;
+}
+
+.footer__content_social {
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.footer__social-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
+  margin-bottom: 16px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer__social-link:hover {
+  color: #c1c1c1;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__copyright {
+  margin-top: 108px;
+}

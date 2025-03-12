@@ -9,7 +9,7 @@
     <title>Cafeteria de la programacion web</title>
 
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <!--<link rel="stylesheet" href="./vendor/normalize.css" />-->
     <link rel="stylesheet" href="./pages/index.css" />
 
     <!--Fuente "Inter"-->
@@ -151,6 +151,7 @@
             </div>
           </div>
         </section>
+
         <!--SECCION DE RESERVA-->
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
@@ -240,7 +241,64 @@
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+
+      <!--------------------------------------->
+      <!--------------------FOOTER-------------------------->
+      <!--NOTAS: Crear un estado hover para los enlaces que cambian su color a #C1C1C1-->
+
+      <footer class="footer" id="footer">
+        <div class="footer__cover">
+          <!--Footer circulo-->
+          <div class="footer footer__circle"></div>
+
+          <div class="footer__content">
+            <!--Footer Logo-->
+            <img
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Logotipo (Footer) de la cafeteria Triple Peaks"
+              class="footer__logo"
+            />
+
+            <!--Footer: Redes sociales-->
+            <div class="footer__content footer__content_social">
+              <h3 class="footer__social-heading">Redes sociales</h3>
+              <ul class="footer__list">
+                <!--Facebook-->
+                <li class="footer__list-item">
+                  <a class="footer__social-link" href="#">
+                    <img
+                      src="./images/facebook_white.svg"
+                      class="footer__social-icon"
+                      alt="Logo de Facebook"
+                    />
+                    Facebook
+                  </a>
+                </li>
+                <!---->
+
+                <!--Instagram-->
+                <li class="footer__list-item">
+                  <a class="footer__social-link" href="#">
+                    <!--Completar #-->
+                    <img
+                      src="./images/instagram_white.svg"
+                      alt="Logo de Instagram"
+                      class="footer__social-icon"
+                    />
+                    Instagram
+                  </a>
+                </li>
+                <!---->
+              </ul>
+              <!---->
+            </div>
+          </div>
+        </div>
+
+        <!--Derechos de autor-->
+        <p class="footer__copyright">© 2025 Javier Muñoz Ll.</p>
+        <!---->
+      </footer>
     </div>
   </body>
 </html>
