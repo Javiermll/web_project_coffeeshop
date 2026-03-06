@@ -38,3 +38,4 @@ Proyecto individual: diseño completo del HTML, estructura modular CSS con `@imp
 ## Repositorio
 
 - GitHub: https://github.com/Javiermll/web_project_coffeeshop
+- Github Pages: https://javiermll.github.io/web_project_coffeeshop/
